@@ -42,11 +42,10 @@ def index(request):
         'index.html',
         context={'num_books':num_books,'num_instances':num_instances,
         'num_instances_available':num_instances_available,'num_authors':num_authors,
-        'num_visits':num_visits,'hour':n_hour,'minute':n_minute,'second':n_second,
-        'year':n_year,'month':n_month,'day':n_day,'weekday':w_day,}, # num_visits appended
-      
+        'num_visits':num_visits,'hour': hour, 'minute': minute, 'second': second, 'year': year,
+        'month': month, 'day': day, 'weekday': w_day,}, # num_visits appended
     )
-
+    
 from django.views import generic
 
 class BookListView(generic.ListView):

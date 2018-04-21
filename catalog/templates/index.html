@@ -26,11 +26,4 @@
 <p>Дата: 
     {% if day < 10 %}0{{ day }}{% else %}{{ day }}{% endif %}.{% if month < 10 %}0{{ month }}{% else %}{{ month }}{% endif %}.{{ year }}</p>
 
-<p>Қазір сағат: 
-    {% if hour < 10 %}0{{ hour }}
-        {% else %}{{ hour }}{% endif %}:
-    {% if minute < 10 %}0{{ minute }}
-        {% else %}{{ minute }}{% endif %}:
-    {% if second < 10 %}0{{ second }}
-        {% else %}{{ second }}{% endif %}</p>
 {% endblock %}
